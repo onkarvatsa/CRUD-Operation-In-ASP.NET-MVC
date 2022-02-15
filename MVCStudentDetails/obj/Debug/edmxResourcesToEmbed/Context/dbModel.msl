@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="StudentDetailsModelStoreContainer" CdmEntityContainer="StudentDetailsEntities1">
+    <EntitySetMapping Name="tbl_MVCStudent">
+      <EntityTypeMapping TypeName="StudentDetailsModel.tbl_MVCStudent">
+        <MappingFragment StoreEntitySet="tbl_MVCStudent">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Fname" ColumnName="Fname" />
+          <ScalarProperty Name="Lname" ColumnName="Lname" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Mobile" ColumnName="Mobile" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
