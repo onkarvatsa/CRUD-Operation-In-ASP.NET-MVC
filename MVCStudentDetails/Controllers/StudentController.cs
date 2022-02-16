@@ -75,5 +75,18 @@ namespace MVCStudentDetails.Controllers
 
             return View("StudentList", list);
         }
+        
+          public ActionResult Reset()
+        {
+            ModelState.Clear();
+            return View("Student");
+        }
+
+        public ActionResult Cancel()
+        {
+            ModelState.Clear();
+            var Stulist = dbobj.tbl_MVCStudent.ToList();
+            return View("StudentList", Stulist);
+        }
     }
 }
